@@ -22,10 +22,12 @@ Examples:
 - /Level_05/Mobile_Application_Development/Coursework/2021
 
 ## File naming convention
-`<module_name>_<assessment_type>_<year>_<Resit/Refer/Defer(if applicable)>_<assessment_number(if applicable)>`
+`<module_name>_<assessment_type>_<year>_<Resit/Refer/Defer(if applicable)>_<assessment_number(if applicable)>_<Answers/Solutions(if applicable)>`
 
 Examples:
 - Cyber_Security_ICT_2021.pdf
+- Concurrent_Programming_ICT_2021_Answers.pdf
+- Concurrent_Programming_ICT_2022_Mock_Answers.pdf
 - Concurrent_Programming_CW_2023.docx
 - Advanced_Server_Side_Web_Programming_CW_2023_1.pdf (Coursework 1)
 - Advanced_Server_Side_Web_Programming_CW_2023_2.pdf (Coursework 2)
