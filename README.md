@@ -1,11 +1,13 @@
 # iit-past-assessments
 A common repo of past assessments (In-Class Tests, Coursework specifications, etc) from IIT, Sri Lanka.
 
+[OneDrive Link](https://1drv.ms/u/s!AqqAHKTGfhovhQeDIoXHo3krILkP?e=mxGar4) (to download folders as ZIP)
+
 ## How to add a new assessment?
-1. Create a new branch from main and checkout.
+1. Create a fork of this main repository and clone into it.
 2. Create a directory.
 3. Add your file and commit it.
-4. Create a pull request.
+4. Create a pull request from your fork, into the main repository.
 
 ## Git branch naming convention
 `<module-name>/<assessment-type>-<year>`
