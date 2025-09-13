@@ -3,8 +3,7 @@ name: Sync to OneDrive
 on:
   push:
     branches:
-      - feat/onedrive-actions
-  workflow_dispatch: # Allow manual triggering of the workflow
+      - main
 
 jobs:
   sync:
@@ -22,7 +21,7 @@ jobs:
           RCLONE_ONEDRIVE_DRIVE_ID: ${{ secrets.ONEDRIVE_DRIVE_ID }}
           RCLONE_ONEDRIVE_DRIVE_TYPE: ${{ secrets.ONEDRIVE_DRIVE_TYPE }}
         run: |
-          rclone sync ./ onedrive:iit-past-assessments-test \
+          rclone sync ./ onedrive:iit-past-assessments \
               --log-level INFO \
               --exclude ".git/**" \
               --exclude ".github/**"
