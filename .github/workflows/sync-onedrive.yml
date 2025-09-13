@@ -23,7 +23,6 @@ jobs:
           RCLONE_ONEDRIVE_DRIVE_TYPE: ${{ secrets.ONEDRIVE_DRIVE_TYPE }}
         run: |
           rclone sync ./ onedrive:iit-past-assessments-test \
-              -v \
               --log-level INFO \
               --exclude ".git/**" \
               --exclude ".github/**"
