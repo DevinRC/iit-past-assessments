@@ -1,0 +1,26 @@
+name: Sync to OneDrive
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch: # Allow manual triggering of the workflow
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Install Rclone
+        run: sudo -v ; curl https://rclone.org/install.sh | sudo bash
+
+      - name: Sync files to OneDrive
+        env:
+          RCLONE_CONFIG_ONEDRIVE_TYPE: onedrive
+          RCLONE_CONFIG_ONEDRIVE_TOKEN: ${{ secrets.ONEDRIVE_TOKEN }}
+        run: |
+          rclone sync ./ onedrive:iit-past-assessments-test \
+              --progress \
+              --exclude ".git/**" \
+              --exclude ".github/**"
