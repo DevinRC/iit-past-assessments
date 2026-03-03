@@ -3,6 +3,8 @@ A common repo of past assessments (In-Class Tests, Coursework specifications, et
 
 [OneDrive Link](https://1drv.ms/u/s!AqqAHKTGfhovhQeDIoXHo3krILkP?e=mxGar4) (to download folders as ZIP)
 
+[Marks Sheet with Indicator Score (Honours Scheme)](https://docs.google.com/spreadsheets/d/1rQCUP0HcvU_aPSgNJTxwm-vZHLo_cPSJqXgtcwJgGqo/edit?usp=sharing)
+
 ## How to add a new assessment?
 1. Create a fork of this main repository and clone into it.
 2. Create a directory.
